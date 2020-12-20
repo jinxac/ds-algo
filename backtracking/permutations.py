@@ -14,7 +14,7 @@ class Solution:
                 arr_s[i], arr_s[start] = arr_s[start], arr_s[i]
 
         traverse(0)
-        print(self.res.strip())
+        print(self.res)
 
 
 if __name__ == "__main__":
