@@ -12,4 +12,4 @@ if __name__ == "__main__":
   arr = [int(x) for x in input().split()]
   solution = Solution()
   print(solution.get_kth_max(arr, k))
-  print(solution.get_kth_min(arr, k))
+  print(solution.get_kth_min(arr, k))2
