@@ -72,4 +72,8 @@ class Solution:
  18. Check division float conversion -> https://www.interviewbit.com/problems/evaluate-expression/
  19. Check in place -> https://leetcode.com/problems/odd-even-linked-list/
  20. Check for stack approach -> https://www.interviewbit.com/problems/maximum-unsorted-subarray/
+ 21. Check for stack approach -> https://www.interviewbit.com/problems/nextgreater/
+ 22. Reverse bits -> https://leetcode.com/problems/reverse-bits/
+ 23. Check binary number algorithm approach -> https://www.educative.io/courses/grokking-the-coding-interview/x1NJVYKNvqz
+ 24. Check optimized approach -> https://www.interviewbit.com/problems/k-largest-elements/
 """
