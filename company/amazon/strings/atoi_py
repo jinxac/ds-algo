@@ -1,0 +1,45 @@
+class Solution:
+    def atoi(self, s):
+        # removing the leading white spaces
+        s = s.lstrip(' ')
+        
+        # empty string, return 0
+        if not s:
+            return 0
+        
+        # starting with words, return 0
+        if not s[0].isnumeric() and not s[0] in ['-', '+']:
+            return 0
+        
+        temp = s[0]
+        start = 1
+        
+
+        while start < len(s) and (s[start] in ['-','+']  or s[start].isnumeric()):
+            # handling consecutive signs
+            if s[start - 1] in ['-', '+'] and s[start] in ['-', '+']:
+                return 0
+            
+            # skipping characters after numbers
+            if s[start - 1].isnumeric() and not s[start].isnumeric():
+                break
+                
+            temp += s[start]
+            start += 1
+        
+    
+        # handling single characters, +, 0
+        if len(temp) == 1 and not temp[0].isnumeric():
+            return 0
+        
+        # converting to integers
+        temp = int(temp)
+        
+        if temp < pow(-2, 31):
+            return pow(-2,31)
+        
+        if temp > pow(2, 31) - 1:
+            return pow(2,31) - 1
+            
+        return temp            
+    
