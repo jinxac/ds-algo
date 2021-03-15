@@ -11,7 +11,11 @@ Pending
 8. Random pointer deep copy - Check O(1) and single pass approach
 9. Atoi - Check solution with direct string converstion to integer, currently converted to integer directly. 
 10. Reverse words - O(1) space complexity
-
+11. Rainwater trapped - Check Stack and 2 pointer approach, solved with dp.
+12. Clone graph - Check DFS iterative
+13. Balanced Tree - Check Iterative approach
+14. closest k points - QuickSelect/Divide conquer approach
+15. Connected Graphs - Union approach
 
 Interesting
 
@@ -19,5 +23,5 @@ Interesting
 2. Generate paranthese -> Time complexity of catalan2. Generate paranthese -> Time complexity of catalan
 3. Compare version -> to remove leading zeros, convert string to number
 4. Reverse words -> How to implement O(1) reversal without using lists?
-
+5. Delete half node -> Interesting way to approach children, root.left = traverse(root.left) instead of root.left.left checks
 
