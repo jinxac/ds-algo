@@ -16,6 +16,11 @@ Pending
 13. Balanced Tree - Check Iterative approach
 14. closest k points - QuickSelect/Divide conquer approach
 15. Connected Graphs - Union approach
+16. Meeting room - Checkout priority queue
+17. Word ladder - Check out middle way approach
+
+16. Largest number, kth frequent element - Comparison sort need to understand a bit more __lt__
+17. nearest k element - revise
 
 Interesting
 
@@ -24,4 +29,4 @@ Interesting
 3. Compare version -> to remove leading zeros, convert string to number
 4. Reverse words -> How to implement O(1) reversal without using lists?
 5. Delete half node -> Interesting way to approach children, root.left = traverse(root.left) instead of root.left.left checks
-
+6. Median of stream -> Max heap should be greater in size than minheap, whenever max_heap - min_heap > 1, rebalance
