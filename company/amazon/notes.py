@@ -1,26 +1,32 @@
 Pending
 
 
-1. Binary Serialize Deserialize - Check iterative approach
 2. Matrix Median - Solve using binary search
 3. Max Distance - Implement O(n) approach
 4. Sorted Array to BST - Try iterative version
-5. kth smallest element - What if BST is modified
+5. kth smallest element - What if BST is modified, check for Delete, Insert node in BST
 6. Valid BST - Check for iterative approach
 7. Single number 2 - Check complicated bit approach
 8. Random pointer deep copy - Check O(1) and single pass approach
 9. Atoi - Check solution with direct string converstion to integer, currently converted to integer directly. 
-10. Reverse words - O(1) space complexity
 11. Rainwater trapped - Check Stack and 2 pointer approach, solved with dp.
 12. Clone graph - Check DFS iterative
 13. Balanced Tree - Check Iterative approach
 14. closest k points - QuickSelect/Divide conquer approach
 15. Connected Graphs - Union approach
-16. Meeting room - Checkout priority queue
 17. Word ladder - Check out middle way approach
+18. Cartesian tree - Check nlogn appraoch
+19. Diagonal Traversal - Check why x-y approach wont work
+21. Current sum 2 - Check time complexity
+22. Sudoku - Revise
+23. Generate BST - Not yet fully understood
+24. Check compressed version of serialize/deserialize tree
+
 
 16. Largest number, kth frequent element - Comparison sort need to understand a bit more __lt__
 17. nearest k element - revise
+18. lps -> check expand around center approach
+
 
 Interesting
 
@@ -30,3 +36,4 @@ Interesting
 4. Reverse words -> How to implement O(1) reversal without using lists?
 5. Delete half node -> Interesting way to approach children, root.left = traverse(root.left) instead of root.left.left checks
 6. Median of stream -> Max heap should be greater in size than minheap, whenever max_heap - min_heap > 1, rebalance
+7. python copy array in recursion, check path to a sequence in trees

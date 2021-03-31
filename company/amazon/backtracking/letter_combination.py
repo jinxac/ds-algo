@@ -1,23 +1,38 @@
 class Solution:
-    def letterCombinations(self, digits: str) -> List[str]:
-        result = []
-        phone = {'2': ['a', 'b', 'c'],
-         '3': ['d', 'e', 'f'],
-         '4': ['g', 'h', 'i'],
-         '5': ['j', 'k', 'l'],
-         '6': ['m', 'n', 'o'],
-         '7': ['p', 'q', 'r', 's'],
-         '8': ['t', 'u', 'v'],
-         '9': ['w', 'x', 'y', 'z']}
+    # @param A : string
+    # @return a list of strings
+    def letterCombinations(self, A):
+        res = []
+            
+        code_map = {
+            '0': '0',
+            '1': '1',
+            '2': 'abc',
+            '3': 'def',
+            '4': 'ghi',
+            '5': 'jkl',
+            '6': 'mno',
+            '7': 'pqrs',
+            '8': 'tuv',
+            '9': 'wxyz'
+        }
         
-        def backtrack(combination, next_digits):
-            if not next_digits:
-                result.append(combination)
+        
+        def helper(combination, pos):
+            if len(combination) == len(A):
+                res.append(combination)
+            
+            if pos >= len(A):
                 return
             
-            for letter in phone[next_digits[0]]:
-                backtrack(combination + letter, next_digits[1:])
+            
+            for element in code_map[A[pos]]:
+                helper(combination + element, pos + 1)
+
+        if not A:
+            return res
+            
+        helper('', 0)
         
-        if digits:
-            backtrack("", digits)
-        return result
+        return res
+
