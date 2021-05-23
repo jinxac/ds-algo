@@ -21,7 +21,8 @@ Pending
 22. Sudoku - Revise
 23. Generate BST - Not yet fully understood
 24. Check compressed version of serialize/deserialize tree
-
+25. source/target dag -> check complexity and dp approach
+26. Equal subset partition 2-> check bottom up
 
 16. Largest number, kth frequent element - Comparison sort need to understand a bit more __lt__
 17. nearest k element - revise
